@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/blogdemoappcursor/Services/BlogMobileDemoDestination3.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/blogdemoappcursor/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/blogdemoappcursor/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

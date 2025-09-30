@@ -1,0 +1,76 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/blogdemoappcursor/Actions/BlogMobileDemoDestination3/Products/NavToProducts_Create.action",
+				"Position": "Right",
+				"SystemItem": "Add",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Products)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false,
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{a_Supplier_Supplier}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"OnPress": "/blogdemoappcursor/Actions/BlogMobileDemoDestination3/Products/NavToProducts_Detail.action",
+						"StatusImage": "",
+						"Title": "{name}",
+						"Footnote": "",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "",
+						"Subhead": "{price}",
+						"SubstatusText": "",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Target": {
+						"EntitySet": "Products",
+						"Service": "/blogdemoappcursor/Services/BlogMobileDemoDestination3.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Products_List"
+}
