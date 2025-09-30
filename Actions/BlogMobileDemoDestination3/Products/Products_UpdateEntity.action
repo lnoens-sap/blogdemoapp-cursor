@@ -1,0 +1,19 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/blogdemoapp-cursor/Services/BlogMobileDemoDestination3.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "name": "#Page:Products_Edit/#Control:name/#Value",
+        "price": "#Page:Products_Edit/#Control:price/#Value",
+        "a_Supplier_Supplier": "#Page:Products_Edit/#Control:a_Supplier_Supplier/#SelectedValue"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/blogdemoapp-cursor/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/blogdemoapp-cursor/Actions/UpdateEntityFailureMessage.action"
+}
