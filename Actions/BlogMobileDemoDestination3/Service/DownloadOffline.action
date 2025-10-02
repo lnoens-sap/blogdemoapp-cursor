@@ -1,0 +1,13 @@
+{
+    "Service": "/blogdemoappcursor/Services/BlogMobileDemoDestination3.service",
+    "DefiningRequests": [{
+        "Name": "Products",
+        "Query": "Products"
+    }],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/blogdemoappcursor/Actions/BlogMobileDemoDestination3/Service/SyncFailureMessage.action",
+    "OnSuccess": "/blogdemoappcursor/Rules/BlogMobileDemoDestination3/ErrorArchive_CheckForSyncError.js"
+}

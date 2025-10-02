@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/blogdemoappcursor/Services/BlogMobileDemoDestination3.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/blogdemoappcursor/Actions/BlogMobileDemoDestination3/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/blogdemoappcursor/Actions/BlogMobileDemoDestination3/Service/CloseOfflineFailureMessage.action"
+}

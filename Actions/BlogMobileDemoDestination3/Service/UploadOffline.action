@@ -1,0 +1,9 @@
+{
+    "Service": "/blogdemoappcursor/Services/BlogMobileDemoDestination3.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/blogdemoappcursor/Actions/BlogMobileDemoDestination3/Service/DownloadStartedMessage.action",
+    "OnFailure": "/blogdemoappcursor/Actions/BlogMobileDemoDestination3/Service/SyncFailureMessage.action"
+}

@@ -1,0 +1,12 @@
+{
+    "DestinationName": "BlogMobileDemoDestination3",
+    "OfflineEnabled": true,
+    "LanguageURLParam": "",
+    "OnlineOptions": {},
+    "OfflineOptions": {
+	"StoreParameters": {}
+},
+    "PathSuffix": "",
+    "SourceType": "Local",
+    "ServiceUrl":""
+}

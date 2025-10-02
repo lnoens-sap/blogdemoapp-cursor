@@ -1,0 +1,14 @@
+{
+    "Service": "/blogdemoappcursor/Services/BlogMobileDemoDestination3.service",
+    "DefiningRequests": [{
+        "Name": "Products",
+        "Query": "Products"
+    }],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/blogdemoappcursor/Actions/BlogMobileDemoDestination3/Service/InitializeOfflineFailureMessage.action"
+}

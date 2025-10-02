@@ -1,0 +1,66 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/blogdemoappcursor/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/blogdemoappcursor/Actions/BlogMobileDemoDestination3/Products/Products_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_Products_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "name",
+							"_Name": "name",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "price",
+							"KeyboardType": "Number",
+							"_Name": "price",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "a_Supplier_Supplier",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{Supplier}",
+								"ReturnValue": "{Supplier}",
+								"Target": {
+									"EntitySet": "MySupplier",
+									"Service": "/blogdemoappcursor/Services/BlogMobileDemoDestination3.service"
+								}
+							},
+							"_Name": "a_Supplier_Supplier",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Products_Create"
+}
