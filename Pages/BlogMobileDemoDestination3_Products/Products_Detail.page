@@ -1,0 +1,77 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/blogdemoappcursor/Services/BlogMobileDemoDestination3.service",
+		"EntitySet": "Products",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/blogdemoappcursor/Actions/BlogMobileDemoDestination3/Products/NavToProducts_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/blogdemoappcursor/Rules/BlogMobileDemoDestination3/Products/Products_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Products_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{name}",
+						"Subhead": "{price}",
+						"BodyText": "",
+						"Footnote": "",
+						"Description": "{a_Supplier_Supplier}",
+						"StatusText": "",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": ""
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "name",
+							"Value": "{name}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "price",
+							"Value": "{price}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "a_Supplier_Supplier",
+							"Value": "{a_Supplier_Supplier}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Products_Detail"
+}

@@ -1,0 +1,18 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/blogdemoappcursor/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/blogdemoappcursor/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "name": "#Page:Products_Create/#Control:name/#Value",
+        "price": "#Page:Products_Create/#Control:price/#Value",
+        "a_Supplier_Supplier": "#Page:Products_Create/#Control:a_Supplier_Supplier/#SelectedValue"
+    },
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/blogdemoappcursor/Services/BlogMobileDemoDestination3.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

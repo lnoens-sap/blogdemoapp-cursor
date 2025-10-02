@@ -1,0 +1,9 @@
+{
+    "Service": "/blogdemoappcursor/Services/BlogMobileDemoDestination3.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnFailure": "/blogdemoappcursor/Actions/BlogMobileDemoDestination3/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}
